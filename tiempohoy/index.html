@@ -48,38 +48,101 @@
             color: #999;
             font-size: 0.9em;
         }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-switch a {
+            margin: 0 5px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .lang-switch a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Soporte - Tiempo Hoy</h1>
-        <p>Bienvenido a la página de soporte de Tiempo Hoy. Si tienes alguna pregunta o necesitas ayuda con la aplicación, por favor consulta la información a continuación o contáctanos directamente.</p>
-        
-        <div class="contact-info">
-            <h2>Información de Contacto</h2>
-            <p>Email: <a href="mailto:srg.krnl@gmail.com">srg.krnl@gmail.com</a></p>
+        <div class="lang-switch">
+            <a href="#en">English</a> | <a href="#es">Español</a>
         </div>
         
-        <div class="faq">
-            <h2>Preguntas Frecuentes</h2>
-            <p><strong>P: ¿Cómo puedo cambiar la configuración del idioma?</strong></p>
-            <p>R: Ve a la configuración de la aplicación y selecciona el idioma deseado.</p>
+        <!-- Spanish Version -->
+        <div id="es">
+            <h1>Soporte - Tiempo Hoy</h1>
+            <p>Bienvenido a la página de soporte de Tiempo Hoy. Si tienes alguna pregunta o necesitas ayuda con la aplicación, por favor consulta la información a continuación o contáctanos directamente.</p>
             
-            <p><strong>P: ¿Cómo agregar una nueva ciudad?</strong></p>
-            <p>R: En la sección de Ciudades, pulsa el botón de añadir y escribe el nombre de la ciudad.</p>
+            <div class="contact-info">
+                <h2>Información de Contacto</h2>
+                <p>Email: <a href="mailto:srg.krnl@gmail.com">srg.krnl@gmail.com</a></p>
+            </div>
             
-            <p><strong>P: ¿Cómo informar un problema?</strong></p>
-            <p>R: Si encuentras algún problema, envíanos un email a <a href="mailto:srg.krnl@gmail.com">srg.krnl@gmail.com</a> con los detalles del problema.</p>
+            <div class="faq">
+                <h2>Preguntas Frecuentes</h2>
+                <p><strong>P: ¿Cómo puedo cambiar la configuración del idioma?</strong></p>
+                <p>R: Ve a la configuración de la aplicación y selecciona el idioma deseado.</p>
+                
+                <p><strong>P: ¿Cómo agregar una nueva ciudad?</strong></p>
+                <p>R: En la sección de Ciudades, pulsa el botón de añadir y escribe el nombre de la ciudad.</p>
+                
+                <p><strong>P: ¿Cómo informar un problema?</strong></p>
+                <p>R: Si encuentras algún problema, envíanos un email a <a href="mailto:srg.krnl@gmail.com">srg.krnl@gmail.com</a> con los detalles del problema.</p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Política de Privacidad</h2>
+                <p>Puedes leer nuestra <a href="https://s-kornilov.github.io/tiempohoy/privacy_policy_es.html">Política de Privacidad</a> para obtener más información sobre cómo manejamos tus datos.</p>
+            </div>
+            
+            <div class="footer">
+                <p>&copy; 2024 Tiempo Hoy. Todos los derechos reservados.</p>
+            </div>
         </div>
         
-        <div class="contact-info">
-            <h2>Política de Privacidad</h2>
-            <p>Puedes leer nuestra <a href="https://s-kornilov.github.io/tiempohoy/privacy_policy.html">Política de Privacidad</a> para obtener más información sobre cómo manejamos tus datos.</p>
-        </div>
-        
-        <div class="footer">
-            <p>&copy; 2024 Tiempo Hoy. Todos los derechos reservados.</p>
+        <!-- English Version -->
+        <div id="en" style="display:none;">
+            <h1>Support - Tiempo Hoy</h1>
+            <p>Welcome to the support page of Tiempo Hoy. If you have any questions or need help with the application, please consult the information below or contact us directly.</p>
+            
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:srg.krnl@gmail.com">srg.krnl@gmail.com</a></p>
+            </div>
+            
+            <div class="faq">
+                <h2>Frequently Asked Questions</h2>
+                <p><strong>Q: How can I change the language settings?</strong></p>
+                <p>A: Go to the app settings and select the desired language.</p>
+                
+                <p><strong>Q: How do I add a new city?</strong></p>
+                <p>A: In the Cities section, press the add button and type the name of the city.</p>
+                
+                <p><strong>Q: How do I report a problem?</strong></p>
+                <p>A: If you encounter any problems, please send us an email at <a href="mailto:srg.krnl@gmail.com">srg.krnl@gmail.com</a> with the details of the problem.</p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Privacy Policy</h2>
+                <p>You can read our <a href="https://s-kornilov.github.io/tiempohoy/privacy_policy_en.html">Privacy Policy</a> to learn more about how we handle your data.</p>
+            </div>
+            
+            <div class="footer">
+                <p>&copy; 2024 Tiempo Hoy. All rights reserved.</p>
+            </div>
         </div>
     </div>
+
+    <script>
+        document.querySelector('.lang-switch a[href="#es"]').addEventListener('click', function() {
+            document.getElementById('en').style.display = 'none';
+            document.getElementById('es').style.display = 'block';
+        });
+
+        document.querySelector('.lang-switch a[href="#en"]').addEventListener('click', function() {
+            document.getElementById('es').style.display = 'none';
+            document.getElementById('en').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
