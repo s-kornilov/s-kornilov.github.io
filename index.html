@@ -1,48 +1,70 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заголовок страницы</title>
-    <link rel="stylesheet" href="./styles/style.css">
-
-    <meta property="og:title" content="Заголовок страницы в OG">
-    <meta property="og:description" content="Описание страницы в OG">
-    <meta property="og:image" content="https://example.com/image.jpg">
-    <meta property="og:url" content="https://example.com/">
-  </head>
-  <body>
-    <header>
-      <h1>Личный сайт</h1>
-      <p>Который сделан на основе готового шаблона</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Эта страница</a></li>
-          <li><a href="catalog.html">Другая страница</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <article>
-        <section>
-          <h2>Первая секция</h2>
-          <p>Она обо мне</p>
-          <img src="images/image.png" alt="Человек и пароход">
-          <p>Но может быть и о семантике, я пока не решил.</p>
-        </section>
-        <section>
-          <h2>Вторая секция</h2>
-          <p>Она тоже обо мне</p>
-        </section>
-        <section>
-          <h2>И третья</h2>
-          <p>Вы уже должны были начать догадываться.</p>
-        </section>
-      </article>
-    </main>
-    <footer>
-      <p>Сюда бы я вписал информацию об авторе и ссылки на другие сайты</p>
-    </footer>
-    <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
-  </body>
+    <title>Soporte - Tiempo Hoy</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soporte - Tiempo Hoy</h1>
+        <p>Bienvenido a la página de soporte de Tiempo Hoy. Si tienes alguna pregunta o necesitas ayuda con la aplicación, por favor consulta la información a continuación o contáctanos directamente.</p>
+        
+        <div class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p>Email: <a href="mailto:srgkrnl@gmail.com">srgkrnl@gmail.com</a></p>
+        </div>
+        
+        <div class="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <p><strong>P: ¿Cómo puedo cambiar la configuración del idioma?</strong></p>
+            <p>R: Ve a la configuración de la aplicación y selecciona el idioma deseado.</p>
+            
+            <p><strong>P: ¿Cómo agregar una nueva ciudad?</strong></p>
+            <p>R: En la sección de Ciudades, pulsa el botón de añadir y escribe el nombre de la ciudad.</p>
+            
+            <p><strong>P: ¿Cómo informar un problema?</strong></p>
+            <p>R: Si encuentras algún problema, envíanos un email a <a href="mailto:srgkrnl@gmail.com">srgkrnl@gmail.com</a> con los detalles del problema.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2024 Tiempo Hoy. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</body>
 </html>
